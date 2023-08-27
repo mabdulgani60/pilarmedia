@@ -1,0 +1,91 @@
+// Create User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "gani",
+    "email": "gani@gmail.com",
+    "password": "gani",
+    "confPassword": "gani",
+    "role": "user"
+}
+
+###
+// Get All User
+GET http://localhost:5000/users
+
+###
+// Get By Id User
+GET http://localhost:5000/users/5a243127-c801-4d84-b235-6011886ab0b6
+
+###
+// Edit User
+PATCH http://localhost:5000/users/35405a42-f529-496d-8484-35c3589c2515
+Content-Type: application/json
+
+{
+    "password": "user",
+    "confPassword": "user"
+}
+
+###
+// Delete User
+DELETE http://localhost:5000/users/5a243127-c801-4d84-b235-6011886ab0b6
+
+
+###
+// Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "gani@gmail.com",
+    "password": "gani"
+}
+
+###
+// Me
+GET http://localhost:5000/me
+
+
+###
+// Logout
+DELETE http://localhost:5000/logout
+Content-Type: application/json
+
+{
+    "email": "gani@gmail.com",
+    "password": "gani"
+}
+
+###
+// Create Product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "laptop",
+    "price": 1000000
+}
+
+###
+// Get All Product
+GET http://localhost:5000/products
+
+###
+// Get By Id Product
+GET http://localhost:5000/products/e2a4c95f-e8bd-460b-aa20-daddee8c8a1c
+
+###
+// Edit Product
+PATCH http://localhost:5000/products/e2a4c95f-e8bd-460b-aa20-daddee8c8a1c
+Content-Type: application/json
+
+{
+    "name": "iphone 6",
+    "price": 2000000
+}
+
+###
+// Delete Product
+DELETE http://localhost:5000/products/e2a4c95f-e8bd-460b-aa20-daddee8c8a1c
